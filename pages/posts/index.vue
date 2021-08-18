@@ -1,12 +1,16 @@
 <template>
     <div class="posts-page">
-
+        <PostList />
     </div>
 </template>
 
 <script>
-export default {
+import PostList from '~/components/Posts/PostList.vue'
 
+export default {
+  components: {
+    PostList
+  }
 }
 </script>
 
@@ -16,4 +20,12 @@ export default {
         justify-content:center;
         align-items:center;
     }  
+    .post-list {
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 </style>

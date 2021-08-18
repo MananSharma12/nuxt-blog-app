@@ -3,32 +3,16 @@
     <section class="intro">
       <h1>Get the Latest Tech News!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview 
-        id="1" 
-        thumbnail="https://assets.thehansindia.com/h-upload/2021/07/31/1600x960_1092805-tech.jpg"
-        title="Hello!" 
-        previewText="This is my First Post!" />
-      <PostPreview 
-        id="2" 
-        thumbnail="https://assets.thehansindia.com/h-upload/2021/07/31/1600x960_1092805-tech.jpg"
-        title="Hello!" 
-        previewText="This is my Second Post!" />
-      <PostPreview 
-        id="3" 
-        thumbnail="https://assets.thehansindia.com/h-upload/2021/07/31/1600x960_1092805-tech.jpg"
-        title="Hello!" 
-        previewText="This is my Third Post!" />
-    </section>
+    <PostList />
   </div>
 </template>
 
 <script>
-import PostPreview from '~/components/Posts/PostPreview.vue'
+import PostList from '~/components/Posts/PostList.vue'
 
 export default {
   components: {
-    PostPreview
+    PostList
   }
 }
 </script>
@@ -63,14 +47,5 @@ export default {
   .intro h1 {
     font-size: 2rem;
   }
-}
-
-.featured-posts {
-  display: flex;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 </style>
